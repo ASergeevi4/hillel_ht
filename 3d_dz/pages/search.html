@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Поиск транспорта на сайте BVC">
+    <meta name="keywords" content="поиск, фильтры для поиска, BVC">
+    <link rel="shortcut icon" href="../assets/img/bvc_logo_title.png" type="image/png">
+    <title>BVC by Aleksandrov - Поиск</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-inner">
+            <div class="first-logo" align="left">
+                <a href="../index.html"><img src="../assets/img/bvc_header_logo.jpg" alt="Лого нашей компании"
+                        width="410" height="80" align="left"></a>
+            </div>
+            <div class="nav" align="right">
+                <nav>
+                    <a href="./search.html">Поиск</a>
+                    <a href="./auth.html">Авторизация</a>
+                    <a href="./register.html">Регистрация</a>
+                </nav>
+            </div>
+            <h1>Просто супер-пупер классная площадка для продажи или покупки транспорта</h1>
+        </section>
+    </header>
+
+    <hr>
+
+    <main>
+        <section class="search_title" style="text-align: center; margin-top: 50px;">
+            <h2>Самый точный и душевный поиск ;)</h2>
+        </section>
+
+        <form action="../action_page.php" method="get">
+            <fieldset>
+                <legend><ins>Тип транспорта:</ins></legend>
+                <input type="radio" id="legkoviy" name="fav_vehicletype" value="Легковой">
+                <label for="legkoviy">Легковой</label>
+                <input type="radio" id="gruzovoy" name="fav_vehicletype" value="Грузовой">
+                <label for="gruzovoy">Грузовой</label>
+                <input type="radio" id="moto" name="fav_vehicletype" value="Мото">
+                <label for="moto">Мото</label>
+                <input type="radio" id="pricep" name="fav_vehicletype" value="pricep">
+                <label for="pricep">Прицеп</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend><ins>Авто не в Украине (под заказ)</ins></legend>
+                <input type="radio" id="show" name="position" value="show">
+                <label for="show">Показать</label>
+                <input type="radio" id="hide" name="position" value="hide">
+                <label for="hide">Скрыть</label>
+                <input type="radio" id="all" name="position" value="all">
+                <label for="all">Все</label>
+            </fieldset>
+           
+            <fieldset>
+                <legend><ins>Страна производитель:</ins></legend>
+                <input type="radio" id="japan" name="coutry" value="japan">
+                <label for="japan">Япония</label>
+                <input type="radio" id="germany" name="coutry" value="germany">
+                <label for="germany">Германия</label>
+                <input type="radio" id="italy" name="coutry" value="italy">
+                <label for="italy">Италия</label>
+                <input type="radio" id="france" name="coutry" value="france">
+                <label for="france">Франция</label>
+                <input type="radio" id="sweden" name="coutry" value="sweden">
+                <label for="sweden">Швеция</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><ins>Марка автомобиля:</ins></legend>
+                <input type="radio" id="toyota" name="mark" value="toyota">
+                <label for="toyota">Тойота</label>
+                <input type="radio" id="honda" name="mark" value="honda">
+                <label for="honda">Хонда</label>
+                <input type="radio" id="mazda" name="mark" value="mazda">
+                <label for="mazda">Мазда</label>
+                <input type="radio" id="bmw" name="mark" value="bwm">
+                <label for="bmw">BWM</label>
+                <input type="radio" id="volvo" name="mark" value="volvo">
+                <label for="volvo">Вольво</label>
+                <input type="radio" id="porshe" name="mark" value="porshe">
+                <label for="porshe">Porshe</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend><ins>Стоимость (у.е. $)</ins></legend>
+                <label for="min_price">Цена мин</label>
+                <input type="number" id="min_price" name="min_price" min="0" max="999999999"
+                    placeholder="Минимальная цена" step="1000">
+                <label for="max_price">Цена макс</label>
+                <input type="number" id="max_price" name="max_price" min="0" max="999999999"
+                    placeholder="Максимальная цена" step="1000"> <br>
+                <label for="nds_price">Цена с НДС</label>
+                <input type="checkbox" id="nds_price" name="nds_price">
+                <label for="torg">Возможен торг</label>
+                <input type="checkbox" id="torg" name="torg">
+                <label for="obmen">Возможен обмен</label>
+                <input type="checkbox" id="obmen" name="obmen">
+            </fieldset>
+            
+            <fieldset>
+                <legend><ins>Техническое состояние</ins></legend>
+                <input type="radio" id="good" name="sostoyanie" value="sostoyanie">
+                <label for="good">Полностью неповрежденное</label>
+                <input type="radio" id="prof_repair" name="sostoyanie" value="sostoyanie">
+                <label for="prof_repair">Профессионально отремонтированнные повреждения</label>
+                <input type="radio" id="non_repair" name="sostoyanie" value="sostoyanie">
+                <label for="non_repair">Не отремонтированные повреждения</label>
+                <input type="radio" id="trash" name="sostoyanie" value="sostoyanie">
+                <label for="trash">Не на ходу</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="color">Цвет: </label>
+                <input type="color" id="color" value="#ff0016">
+            </fieldset>
+
+            <fieldset>
+                <legend><ins>Тип топлива</ins></legend>
+                <input type="radio" id="benzin" name="toplivo" value="toplivo">
+                <label for="benzin">Бензин</label>
+                <input type="radio" id="diesel" name="toplivo" value="toplivo">
+                <label for="diesel">Дизель</label>
+                <input type="radio" id="gas" name="toplivo" value="toplivo">
+                <label for="gas">Газ</label>
+                <input type="radio" id="electric" name="toplivo" value="toplivo">
+                <label for="electric">Электрический</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><ins>Год выпуска</ins></legend>
+                <label for="year_ot">От</label>
+                <input type="month" id="year_ot" name="year_ot">
+                <label for="year_do">до</label>
+                <input type="month" id="year_do" name="year_do">
+            </fieldset>
+
+            <input type="submit" value="Начать поиск">
+            <input type="reset" value="Давай по новой">
+        </form>
+
+
+
+    </main>
+
+    <hr>
+
+    <footer style="background-color: rgb(211, 211, 211);">
+        <div class="grafic-raboti">
+            <p><b>График работы контакт-центра:</b></p>
+            <ul>
+                <li><ins>Понедельник-пятница:</ins> 09<sup>15</sup>-19<sup>15</sup></li>
+                <li><ins>Суббота:</ins> 09<sup>15</sup>-16<sup>00</sup></li>
+                <li><ins>Воскресенье</ins>: выходной</li>
+            </ul>
+        </div>
+        <div class="contacs">
+            <p><b>Наши контакты</b></p>
+            <ul>
+                <li><ins>Наш телефон</ins>: <a href="tel:380676119535">067-611-95-35</a></li>
+                <li><ins>Наша почта</ins>: <a href="mailto:info@bvc.com">info@bvc.com</a></li>
+            </ul>
+        </div>
+        <p align="center">&#169;BVC Aleksandrov company 2022 year</p>
+    </footer>
+</body>
+
+</html>

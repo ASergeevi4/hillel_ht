@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Регистрация на сайте BVC">
+    <meta name="keywords" content="регистрация, личный кабинет, BVC">
+    <link rel="shortcut icon" href="../assets/img/bvc_logo_title.png" type="image/png">
+    <title>BVC by Aleksandrov - Регистрация</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-inner">
+            <div class="first-logo" align="left">
+                <a href="../index.html"><img src="../assets/img/bvc_header_logo.jpg" alt="Лого нашей компании" width="410" height="80"
+                    align="left"></a>
+            </div>
+            <div class="nav" align="right">
+                <nav>
+                    <a href="./search.html">Поиск</a>
+                    <a href="./auth.html">Авторизация</a>
+                    <a href="./register.html">Регистрация</a>
+                </nav>
+            </div>
+            <h1>Просто супер-пупер классная площадка для продажи или покупки транспорта</h1>
+        </section>
+    </header>
+
+    <hr>
+    <div class="registration">
+        <div class="registration_form" style="margin-top: 60px;">
+            <form action="../action_page.php" method="get">
+                <div class="user">
+                    <label for="username">Имя:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="surname">Фамилия:</label><br>
+                    <input type="text" id="surname" name="surname"><br>
+                </div>
+                <div class="contacts">
+                    <label for="phone">Телефон:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="067-123-45-67" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required><br>
+                    <label for="email">Ваш E-Mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div class="password_data">
+                    <label for="pwd">Пароль:</label><br>
+                    <input type="password" id="pwd" minlength="4" maxlength="16" name="pwd" placeholder="от 4 до 16 символов" required><br>
+                    <label for="pwd_repeat">Подтверждение пароля:</label><br>
+                    <input type="password" id="pwd_repeat" minlength="4" maxlength="16" name="pwd_repeat" placeholder="от 4 до 16 символов" required><br><br>
+                </div>
+                <div class="buttons_registration">
+                    <input type="submit" value="Регистрация">
+                    <input type="reset" value="Я ПЕРЕДУМАЛ!!!">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer style="background-color: rgb(211, 211, 211);">
+        <div class="grafic-raboti">
+            <p><b>График работы контакт-центра:</b></p>
+            <ul>
+                <li><ins>Понедельник-пятница:</ins> 09<sup>15</sup>-19<sup>15</sup></li>
+                <li><ins>Суббота:</ins> 09<sup>15</sup>-16<sup>00</sup></li>
+                <li><ins>Воскресенье</ins>: выходной</li>
+            </ul>
+        </div>
+        <div class="contacs">
+            <p><b>Наши контакты</b></p>
+            <ul>
+                <li><ins>Наш телефон</ins>: <a href="tel:380676119535">067-611-95-35</a></li>
+                <li><ins>Наша почта</ins>: <a href="mailto:info@bvc.com">info@bvc.com</a></li>
+            </ul>
+        </div>
+        <p align="center">&#169;BVC Aleksandrov company 2022 year</p>
+    </footer>
+</body>
+
+</html>
