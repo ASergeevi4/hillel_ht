@@ -17,9 +17,7 @@ body {
 .products .title h2 {
     font-weight: 500;
     text-transform: uppercase;
-    color: rgb(243, 12, 12);
-    opacity: 60%;
-    margin: 40px auto 20px;
+    color: rgba(243, 12, 12, 0.596);
 }
 
 .products .list .card {
@@ -29,14 +27,13 @@ body {
 }
 
 .products .list .card h3 {
-    font-weight: bold;
+    font-weight: 700;
     font-style: 20px;
     margin-bottom: 10px;
 }
 
 .products .list .card .description {
-    font-weight: normal;
-    opacity: .6;
+    color: rgb(121, 121, 121);
     margin-bottom: 20px;
 }
 
