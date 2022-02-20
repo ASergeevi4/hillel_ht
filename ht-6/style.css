@@ -1,0 +1,45 @@
+body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.products .container {
+    width: 1080px;
+    margin: 0px auto 40px;
+}
+
+.products .container .title {
+    text-align: center;
+}
+
+.products .container .title h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(243, 12, 12);
+    opacity: 60%;
+    margin: 40px auto 20px;
+}
+
+.products .container .list .card {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.products .container .list .card h3 {
+    font-weight: bold;
+    font-style: 20px;
+    margin-bottom: 10px;
+}
+
+.products .container .list .card .description {
+    font-weight: normal;
+    opacity: .6;
+    margin-bottom: 20px;
+}
+
+.products .container .list .card .logo {
+    display: inline-block;
+}
