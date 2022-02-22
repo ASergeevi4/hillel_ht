@@ -1,6 +1,4 @@
 body {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 }
@@ -35,8 +33,4 @@ body {
 .products .list .card .description {
     color: rgb(121, 121, 121);
     margin-bottom: 20px;
-}
-
-.products .list .card .logo {
-    display: inline-block;
 }
