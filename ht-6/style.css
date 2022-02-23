@@ -1,0 +1,36 @@
+body {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.products {
+    width: 1080px;
+    margin: 0px auto 40px;
+}
+
+.products .title {
+    text-align: center;
+}
+
+.products .title h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(243, 12, 12, 0.596);
+}
+
+.products .list .card {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.products .list .card h3 {
+    font-weight: 700;
+    font-style: 20px;
+    margin-bottom: 10px;
+}
+
+.products .list .card .description {
+    color: rgb(121, 121, 121);
+    margin-bottom: 20px;
+}
